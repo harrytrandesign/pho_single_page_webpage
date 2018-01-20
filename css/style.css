@@ -1,0 +1,407 @@
+/* GREEN - rgba(73, 191, 53, 1); */
+/* DK GREEN - rgba(49, 127, 36, 1); */
+/* LAYOUT */
+/*	body {
+		background-color: rgba(236, 240, 241, 1);
+	}*/
+
+	hr {
+		margin-top: 60px;
+		margin-bottom: 40px;
+		width: 90%;
+		background-color: rgba(73, 191, 53, 0.4);
+		border-color: rgba(73, 191, 53, 0.4);
+		color: rgba(73, 191, 53, 0.4);
+	}
+
+	.full-screen {
+		min-height: 80vh;
+	}
+
+	.feature-row {
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
+
+	#story,
+	#navigation,
+	.jumbotron {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.vertical-alignment {
+		padding: 120px 0;
+	}
+
+	.body-text-box {
+		max-width: 60%;
+		margin: 0 auto;
+	}
+
+	.location-map {
+		width: 100%;
+		height: 360px;
+	}
+
+	.indent-five-pct {
+		margin-left: 5%;
+	}
+
+	.indent-twelve-pct {
+		margin-left: 12%;
+	}
+
+/* FONT STYLES FAMILY */
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-bottom: 25px;
+		font-family: 'Bevan', cursive;
+	}
+
+	p {
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 1.75em;
+	}
+
+	.jumbotron h1,
+	.jumbotron h2 {
+		color: #fafafa;
+		text-shadow: 2px 2px 8px #202020;
+	}
+
+	.jumbotron h1 {
+		font-size: 12em;
+	}
+
+	.jumbotron h2 {
+		font-size: 2em;
+	}
+
+/* COLORS */
+
+	.navbar-collapse {
+		border-color: rgba(255, 255, 255, 0) !important;
+	}
+
+	.green-drop-cap {
+		float: left;
+		padding: 20px 8px 4px 0;
+		font-size: 3em;
+		line-height: 17px;
+		color: rgba(73, 191, 53, 1);
+	}
+
+	.green-text {
+		color: rgba(73, 191, 53, 1);
+	}
+
+	.green-text-increment {
+		font-size: 1.5em;
+	}
+
+/* JUMBOTRON */
+	#splash {
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+	}
+
+	.jumbotron {
+		height: 100vh;
+		min-height: 600px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(255, 255, 255, 1);
+		background-image: url('../images/springrolls.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		color: #474e5d;
+		-moz-transition: all .5s;
+		-webkit-transition: all .5s;
+		transition: all .5s;
+		-moz-transform: scale(1, 1);
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+		z-index: -1;
+	}
+
+	.jumbotron:hover {
+		-moz-transform: scale(1.1, 1.1);
+		-webkit-transform: scale(1.1, 1.1);
+		transform: scale(1.1, 1.1);    
+	}
+
+	.splash-title {
+		margin-top: 100px;
+	}
+
+/* PULL OUT MENU DISPLAY */
+
+	#menu-list {
+		margin: 0 auto;
+		padding: 40px 0;
+		background-color: rgba(44, 62, 80, 1);
+		color: #fafafa;
+	}
+	#menu-list h3 {
+		font-family: 'Arvo', serif;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.menu-display {
+		margin-bottom: 40px;
+		padding: 80px 80px 120px 80px;
+		border-width: 6px;
+		border-style: double;
+		border-color: #fafafa;
+	}
+
+	#close-menu {
+		display: inline-block;
+		font-size: 2.5em;
+		color: #fafafa;
+	}
+
+	#close-menu:hover {
+		color: rgba(49, 127, 36, 1);
+	}
+
+/* FLIPPING IMAGE GALLERY PERSPECTIVE PORTFOLIO */
+
+	.flip-container {
+		perspective: 1000px;
+	}
+
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+	.flip-container, .front, .back {
+		width: 100%;
+		height: 320px;
+	}
+
+	.flipper {
+		transition: 2s;
+		transform-style: preserve-3d;
+		position: relative;
+	}
+
+	.front, .back {
+		backface-visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.front {
+		z-index: 2;
+		transform: rotateY(0deg);
+	}
+
+	.back {
+		transform: rotateY(180deg);
+	}
+
+	.flip-text {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		position: relative;
+		top: 50px;
+	}
+
+	.flip-text a {
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 1.5em;
+		color: #fafafa;
+	}
+
+	.flip-text a:hover {
+		color: rgba(42, 119, 79, 1);
+	}
+
+/* IMAGES */
+
+	.feature-img {
+		width: 100%;
+		height: 320px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.image-one {
+		background-image: url('../images/phobowl.jpg');
+	}
+
+	.image-two {
+		background-image: url('../images/crabrangoon.png');
+	}
+
+	.image-three {
+		background-image: url('../images/banhmipork.jpg');
+	}
+
+/* LINKS */
+
+	a {
+		color: rgba(73, 191, 53, 1) !important;
+	}
+	
+	a:hover {
+		text-decoration: none;
+		color: rgba(49, 127, 36, 1) !important;
+	}
+
+	#menu a {
+		margin-right: 5px;
+		margin-left: 5px;
+		font-family: 'Bevan', cursive;
+		font-size: 1.5em;
+		color: rgba(73, 191, 53, 1);
+	}
+
+	#menu a:hover {
+		color: rgba(49, 127, 36, 1);
+	}
+
+	.call-us-button {
+		min-width: 180px;
+		margin: 40px auto 0;
+		padding: 15px 0;
+		background-color: rgba(255, 255, 255, 0);
+		border: 2px solid rgba(73, 191, 53, 1);
+		border-radius: 0;
+		color: rgba(73, 191, 53, 1);
+	}
+
+	.call-us-button:hover {
+		background-color: rgba(73, 191, 53, 1);
+		border: 2px solid rgba(73, 191, 53, 1);
+		color: #fafafa;
+
+		-webkit-transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out, color 0.5s ease-in-out;
+		-moz-transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out, color 0.5s ease-in-out;
+		-o-transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out, color 0.5s ease-in-out;
+		transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out, color 0.5s ease-in-out;
+	}
+
+	.menu-shortcut-call-button {
+		min-width: 180px;
+		margin: 40px auto 0;
+		padding: 15px 0;
+		background-color: rgba(255, 255, 255, 0);
+		border: 2px solid rgba(250, 250, 250, 1);
+		border-radius: 0;
+		color: rgba(250, 250, 250, 1);
+	}
+
+	.menu-shortcut-call-button:hover {
+		background-color: rgba(250, 250, 250, 1);
+		border: 2px solid rgba(250, 250, 250, 1);
+		color: rgba(44, 62, 80,1.0);
+
+		-webkit-transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out, color 0.5s ease-in-out;
+		-moz-transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out, color 0.5s ease-in-out;
+		-o-transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out, color 0.5s ease-in-out;
+		transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out, color 0.5s ease-in-out;
+	}
+
+	.return-top {
+		font-size: 0.75em;
+	}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+
+	.splash-title {
+		position: relative;
+		width: 80%;
+		margin-left: -40%;
+		top: 20px;
+		left: 50%;
+	}
+
+	.jumbotron {
+		background-attachment: scroll;
+	}
+
+	.jumbotron h1 {
+		font-size: 6em;
+	}
+
+	.jumbotron h2 {
+		font-size: 1em;
+	}
+
+	.menu-display {
+		padding: 20px 20px 60px 20px;
+	}
+
+	.feature-text-box,
+	.body-text-box {
+		max-width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.feature-row {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.location-map {
+		width: 100%;
+		height: 240px;
+	}
+
+	#map {
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	.feature-img {
+		height: 320px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	h1 {
+		font-size: 1.75em;
+	}
+
+	h3 {
+		font-size: 1.25em;
+	}
+
+	p {
+		font-size: 1.25em;
+	}
+
+	.navbar-collapse {
+		width: 100%;		
+	}
+
+	.feature-img {
+		height: 280px;
+	}
+}
+
+/* END CSS DOC 
